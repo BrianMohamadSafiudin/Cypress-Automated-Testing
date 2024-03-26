@@ -10,15 +10,27 @@
 
 // Step 2: Query for an element
 
+// describe('My First Test', () => {
+//   it('finds the content "type"', () => {
+//     cy.visit('https://example.cypress.io')
+
+//     // tes untuk sukses
+//     cy.contains('type')
+
+//     // tes untuk gagal
+//     cy.contains('hype')
+//   })
+// })
+
+// ---------------------------------------------
+
+// Step 3: Click an element
+
 describe('My First Test', () => {
-  it('finds the content "type"', () => {
+  it('clicks the link "type"', () => {
     cy.visit('https://example.cypress.io')
 
-    // tes untuk sukses
-    cy.contains('type')
-
-    // tes untuk gagal
-    // cy.contains('hype')
+    cy.contains('type').click()
   })
 })
 
